@@ -4,4 +4,4 @@ resource_check: true
 
 openpai_registry: docker.io
 
-gcr_image_repo: gcr.io
+gcr_image_repo: whoami179

@@ -49,8 +49,8 @@ sudo pip3 install -r requirements.txt
 
 echo "Clone OpenPAI source code from github"
 cd ${HOME}/pai-deploy
-git clone https://github.com/microsoft/pai.git
+git clone -b pai-1.3.y https://github.com/ReyRen/pai.git
 cd pai
 
-echo "switch to the branch ${OPENPAI_BRANCH_NAME}"
-git checkout ${OPENPAI_BRANCH_NAME}
+#echo "switch to the branch ${OPENPAI_BRANCH_NAME}"
+#git checkout ${OPENPAI_BRANCH_NAME}

@@ -28,7 +28,8 @@ kubernetes:
   # If you are not familiar with etcd, please don't change it.
   storage-backend: etcd3
   # The docker registry used in the k8s deployment. If you can access to gcr, we suggest to use gcr.
-  docker-registry: gcr.io/google_containers
+  #docker-registry: gcr.io/google_containers
+  docker-registry: whoami179
   # http://gcr.io/google_containers/hyperkube. Or the tag in your registry.
   hyperkube-version: v1.9.9
   # http://gcr.io/google_containers/etcd. Or the tag in your registry.

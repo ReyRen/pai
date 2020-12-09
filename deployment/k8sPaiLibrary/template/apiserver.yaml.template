@@ -28,7 +28,7 @@ metadata:
 spec:
   hostNetwork: true
   containers:
-  - image: whoami179/kube-apiserver:{{ cluster_cfg['kubernetes']['apiserver-version'] }}
+  - image: {{ cluster_cfg['kubernetes']['docker-registry'] }}/kube-apiserver:{{ cluster_cfg['kubernetes']['apiserver-version'] }}
     name: apiserver-container
     command:
     - /usr/local/bin/kube-apiserver
