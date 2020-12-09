@@ -19,11 +19,11 @@ mkdir -p ${HOME}/pai-deploy/
 cd ${HOME}/pai-deploy
 
 echo "Clone kubespray source code from github"
-git clone https://github.com/kubernetes-sigs/kubespray.git
+git clone -b release-2.11 https://github.com/ReyRen/kubespray.git
 
 echo "Checkout to the Release Branch"
-cd kubespray
-git checkout release-2.11
+#cd kubespray
+#git checkout release-2.11
 
 echo "Copy inventory folder, and save it "
 cp -rfp ${HOME}/pai-deploy/kubespray/inventory/sample ${HOME}/pai-deploy/kubespray/inventory/pai
